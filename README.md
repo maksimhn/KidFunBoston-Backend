@@ -22,8 +22,8 @@ Frontend Features:
 * jQuery for DOM manipulation and event handling
 * Animation and hover effects (if I end up doing this)
 
-The frontend can be found here: (provide URL...)
+The frontend can be found here: https://github.com/jlevinger/KidFunBoston-Frontend
 
-The wireframes and user stories can be found here: (provide URL...)
+The wireframes and user stories can be found here: https://github.com/jlevinger/KidFunBoston-Frontend/blob/master/KidFunBoston.pdf
 
 The app itself can be found here: (provide URL...)
