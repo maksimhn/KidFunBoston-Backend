@@ -5,9 +5,11 @@ This is the repository for the backend, which was created using Ruby on Rails.
 
 Backend Features:
 
-* Use of XXX gem for handling the uploading of images to Amazon S3
+* Use of Paperclip gem for handling the uploading of images to Amazon S3
 * Use of ImageMagick for processing of images and their respective thumbnails
 * Need to add some more features...
+
+The ERD can be found here: https://github.com/jlevinger/KidFunBoston-Backend/blob/master/erd.jpg
 
 The frontend was created using JavaScript, jQuery, AJAX calls to the backend, HTML, and CSS.
 
