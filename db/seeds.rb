@@ -9,5 +9,5 @@
   email = "#{name}@#{name}.com"
   next if User.exists? email: email
   User.create!(email: email, password: 'joelevinger',
-               password_confirmation: 'joelevinger')
+               password_confirmation: 'joelevinger', name: 'Joe Levinger')
 end
