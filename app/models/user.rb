@@ -4,7 +4,8 @@ class User < ActiveRecord::Base
 
   before_create :set_token
 
-  validates :email, uniqueness: true
+  validates :email, presence: true, uniqueness: true
+  validates :name, presence: true
 
   def self.login(email, password)
     user = find_by email: email
