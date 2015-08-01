@@ -1,5 +1,7 @@
 #
 class User < ActiveRecord::Base
+  has_many :activities, through: :comments
+
   has_secure_password
 
   before_create :set_token
