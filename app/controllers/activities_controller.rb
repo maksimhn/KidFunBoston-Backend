@@ -1,7 +1,7 @@
 #
 class ActivitiesController < ApplicationController
   def index
-    render json: Activity.all
+    render json: Activity.where(home: true)
   end
 
   private

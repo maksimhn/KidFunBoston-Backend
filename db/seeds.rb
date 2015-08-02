@@ -24,7 +24,8 @@ mfa = Activity.create!(picture_url: '../images/mfa.jpg', caption: 'Museums',
                        int_page_header: 'Museums',
                        detail_page_header: 'Museum of Fine Arts',
                        detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
-                       detail_url_text: 'Learn more about Playdates')
+                       detail_url_text: 'Learn more about Playdates',
+                       home: true)
 Activity.create!(picture_url: '../images/pubgarden.jpg', caption: 'Parks',
                  cost: 'medium', min_age: 3, max_age: 18, venue: 'Parks',
                  activity_level: 'low', holiday_activity: false,
@@ -34,7 +35,8 @@ Activity.create!(picture_url: '../images/pubgarden.jpg', caption: 'Parks',
                  int_page_header: 'Museums',
                  detail_page_header: 'Museum of Fine Arts',
                  detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
-                 detail_url_text: 'Learn more about Playdates')
+                 detail_url_text: 'Learn more about Playdates',
+                 home: true)
 Activity.create!(picture_url: '../images/segway.jpg', caption: 'Tours',
                  cost: 'medium', min_age: 3, max_age: 18, venue: 'Tours',
                  activity_level: 'low', holiday_activity: false,
@@ -44,7 +46,8 @@ Activity.create!(picture_url: '../images/segway.jpg', caption: 'Tours',
                  int_page_header: 'Museums',
                  detail_page_header: 'Museum of Fine Arts',
                  detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
-                 detail_url_text: 'Learn more about Playdates')
+                 detail_url_text: 'Learn more about Playdates',
+                 home: true)
 Activity.create!(picture_url: '../images/frogpond.jpg', caption: 'Seasonal Activities',
                  cost: 'medium', min_age: 3, max_age: 18, venue: 'Seasonal Activities',
                  activity_level: 'low', holiday_activity: false,
@@ -54,7 +57,8 @@ Activity.create!(picture_url: '../images/frogpond.jpg', caption: 'Seasonal Activ
                  int_page_header: 'Museums',
                  detail_page_header: 'Museum of Fine Arts',
                  detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
-                 detail_url_text: 'Learn more about Playdates')
+                 detail_url_text: 'Learn more about Playdates',
+                 home: true)
 Activity.create!(picture_url: '../images/freedomtrail.jpg', caption: 'Activities by Price ... Even Free!',
                  cost: 'medium', min_age: 3, max_age: 18, venue: 'Activities by Price ... Even Free!',
                  activity_level: 'low', holiday_activity: false,
@@ -64,7 +68,8 @@ Activity.create!(picture_url: '../images/freedomtrail.jpg', caption: 'Activities
                  int_page_header: 'Museums',
                  detail_page_header: 'Museum of Fine Arts',
                  detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
-                 detail_url_text: 'Learn more about Playdates')
+                 detail_url_text: 'Learn more about Playdates',
+                 home: true)
 Activity.create!(picture_url: '../images/july4th.png', caption: 'Holiday Activities',
                  cost: 'medium', min_age: 3, max_age: 18, venue: 'Holiday Activities',
                  activity_level: 'low', holiday_activity: false,
@@ -74,7 +79,30 @@ Activity.create!(picture_url: '../images/july4th.png', caption: 'Holiday Activit
                  int_page_header: 'Museums',
                  detail_page_header: 'Museum of Fine Arts',
                  detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
-                 detail_url_text: 'Learn more about Playdates')
+                 detail_url_text: 'Learn more about Playdates',
+                 home: true)
+Activity.create!(picture_url: '../images/mos.jpg', caption: 'Museum of Science',
+                 cost: 'medium', min_age: 3, max_age: 18, venue: 'Museums',
+                 activity_level: 'low', holiday_activity: false,
+                 description: 'description goes here',
+                 venue_url: '../images/mos.jpg',
+                 detail_picture_url: '../images/mfaplaydates.jpg',
+                 int_page_header: 'Museums',
+                 detail_page_header: 'Museum of Science',
+                 detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
+                 detail_url_text: 'Learn more about Playdates',
+                 home: false)
+Activity.create!(picture_url: '../images/childrensmuseum.jpg', caption: 'Children\'s Museum',
+                 cost: 'medium', min_age: 3, max_age: 18, venue: 'Museums',
+                 activity_level: 'low', holiday_activity: false,
+                 description: 'description goes here',
+                 venue_url: '../images/childrensmuseum.jpg',
+                 detail_picture_url: '../images/mfaplaydates.jpg',
+                 int_page_header: 'Museums',
+                 detail_page_header: 'Children\'s Museum',
+                 detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
+                 detail_url_text: 'Learn more about Playdates',
+                 home: false)
 
 Comment.create!(title: 'Don\'t bother with this one...',
                 body: 'My kid was bored out of his mind! I\'ll never do this again.',
