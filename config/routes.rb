@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   post '/login' => 'users#login'
+  get '/activities/find_by_category', to: 'activities#find_by_category'
+  get '/activities/find_by_venue', to: 'activities#find_by_venue'
   resources :users, except: [:new, :edit]
   resources :activities, except: [:new, :edit]
-  resources :categories, except: [:new, :edit]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
