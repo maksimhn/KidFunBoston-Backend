@@ -1,5 +1,6 @@
 #
 class User < ActiveRecord::Base
+  has_many :comments
   has_many :activities, through: :comments
 
   has_secure_password

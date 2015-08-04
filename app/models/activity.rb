@@ -1,5 +1,6 @@
 #
 class Activity < ActiveRecord::Base
+  has_many :comments
   has_many :users, through: :comments
 
   validates :picture_url, :caption, :cost, :venue, :activity_level,
