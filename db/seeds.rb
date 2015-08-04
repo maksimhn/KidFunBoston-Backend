@@ -10,15 +10,11 @@ lisa = User.create!(name: 'Lisa Murphy', email: 'lisa@lisamurphy.com',
 mfa = Activity.create!(picture_url: '../images/mfa.jpg', caption: 'Museum of Fine Arts',
                        cost: 'medium', min_age: 3, max_age: 18, venue: 'Museums',
                        activity_level: 'low', holiday_activity: false,
-                       description: 'If you\'re one of those folks who thought the MFA was just for grownups, think again! Read on:
-
-                         MFA Playdates — First and Third Mondays — 10:15 - 11:00 am
-
-                         On the first and third Mondays of each month, bring your toddler to enjoy story time and looking activities in the galleries, followed by art making. Each month focuses on a specific theme. Recommended for children ages 4 and younger with adults. Meet at the Sharf Visitor Center. No registration required.
-
-                         Stay after the program to explore the Museum on your own or with new acquaintances, and enjoy snacks or lunch in the Garden Cafeteria or Calderwood Courtyard, and choose from a great selection of kid-friendly options from any of the MFA\'s dining venues.
-
-                         FREE with Museum admission.',
+                       description: 'If you\'re one of those folks who thought the MFA was just for grownups, think again! Read on:</br></br>
+                         MFA Playdates — First and Third Mondays — 10:15 - 11:00 am</br></br>
+                         On the first and third Mondays of each month, bring your toddler to enjoy story time and looking activities in the galleries, followed by art making. Each month focuses on a specific theme. Recommended for children ages 4 and younger with adults. Meet at the Sharf Visitor Center. No registration required.</br></br>
+                         Stay after the program to explore the Museum on your own or with new acquaintances, and enjoy snacks or lunch in the Garden Cafeteria or Calderwood Courtyard, and choose from a great selection of kid-friendly options from any of the MFA\'s dining venues.</br></br>
+                         FREE with Museum admission.</br>',
                        venue_url: '../images/mfa.jpg',
                        detail_picture_url: '../images/mfaplaydates.jpg',
                        int_page_header: 'Museums',
@@ -26,6 +22,17 @@ mfa = Activity.create!(picture_url: '../images/mfa.jpg', caption: 'Museum of Fin
                        detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
                        detail_url_text: 'Learn more about Playdates',
                        home: true)
+mos = Activity.create!(picture_url: '../images/mos.jpg', caption: 'Museum of Science',
+                       cost: 'medium', min_age: 3, max_age: 18, venue: 'Museums',
+                       activity_level: 'low', holiday_activity: false,
+                       description: 'description goes here',
+                       venue_url: '../images/mos.jpg',
+                       detail_picture_url: '../images/mfaplaydates.jpg',
+                       int_page_header: 'Museums',
+                       detail_page_header: 'Museum of Science',
+                       detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
+                       detail_url_text: 'Learn more about Playdates',
+                       home: false)
 Activity.create!(picture_url: '../images/pubgarden.jpg', caption: 'Boston Public Garden',
                  cost: 'medium', min_age: 3, max_age: 18, venue: 'Parks',
                  activity_level: 'low', holiday_activity: false,
@@ -81,17 +88,6 @@ Activity.create!(picture_url: '../images/july4th.png', caption: 'July 4th on the
                  detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
                  detail_url_text: 'Learn more about Playdates',
                  home: true)
-Activity.create!(picture_url: '../images/mos.jpg', caption: 'Museum of Science',
-                 cost: 'medium', min_age: 3, max_age: 18, venue: 'Museums',
-                 activity_level: 'low', holiday_activity: false,
-                 description: 'description goes here',
-                 venue_url: '../images/mos.jpg',
-                 detail_picture_url: '../images/mfaplaydates.jpg',
-                 int_page_header: 'Museums',
-                 detail_page_header: 'Museum of Science',
-                 detail_url: 'http://www.mfa.org/programs/gallery-activities-and-tours/mfa-playdates',
-                 detail_url_text: 'Learn more about Playdates',
-                 home: false)
 Activity.create!(picture_url: '../images/childrensmuseum.jpg', caption: 'Children\'s Museum',
                  cost: 'medium', min_age: 3, max_age: 18, venue: 'Museums',
                  activity_level: 'low', holiday_activity: false,
@@ -110,3 +106,6 @@ Comment.create!(title: 'Don\'t bother with this one...',
 Comment.create!(title: 'An amazing experience...',
                 body: 'My kid loved Playdates. She can\'t wait for me to take her again!',
                 rating: 5, user_id: lisa.id, activity_id: mfa.id)
+Comment.create!(title: 'Loved it!',
+                body: 'My kid loved the Museum of Science. She\'s looking forward to her next visit',
+                rating: 5, user_id: lisa.id, activity_id: mos.id)
