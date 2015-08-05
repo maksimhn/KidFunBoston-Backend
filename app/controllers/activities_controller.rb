@@ -1,7 +1,5 @@
 #
-class ActivitiesController < ApplicationController
-  skip_before_action :authenticate, only: [:index, :show]
-
+class ActivitiesController < OpenReadController
   def index
     set_list
     render json: @activities

@@ -8,8 +8,7 @@ class UsersController < ApplicationController
     token = User.login(credentials[:email], credentials[:password])
     if token
       render json: {
-        token: token,
-        id: id
+        token: token
       }
     else
       head :unauthorized
@@ -68,7 +67,6 @@ class UsersController < ApplicationController
 
   def user_credentials
     params.require(:credentials).permit(:email,
-                                        :password,
-                                        :password_confirmation)
+                                        :password)
   end
 end
