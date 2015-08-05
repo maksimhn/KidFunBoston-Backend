@@ -7,7 +7,10 @@ class UsersController < ApplicationController
     credentials = user_credentials
     token = User.login(credentials[:email], credentials[:password])
     if token
-      render json: { token: token }
+      render json: {
+        token: token,
+        id: id
+      }
     else
       head :unauthorized
     end
