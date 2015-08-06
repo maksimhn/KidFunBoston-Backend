@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   post '/login' => 'users#login'
+  post '/register' => 'users#create'
   resources :users, except: [:new, :edit]
   resources :activities, except: [:new, :edit] do
     resources :comments
